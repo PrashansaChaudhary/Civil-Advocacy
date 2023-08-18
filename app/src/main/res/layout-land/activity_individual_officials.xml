@@ -1,0 +1,259 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/currentLocation"
+            android:layout_width="812dp"
+            android:layout_height="31dp"
+            android:layout_margin="2dp"
+            android:background="@color/lightTheme"
+            android:padding="4dp"
+            android:text="Location"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-54dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+
+
+        <TextView
+            android:id="@+id/officesNames"
+            android:layout_width="359dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:padding="1dp"
+            android:text="U.S. Senator"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currentLocation" />
+
+        <TextView
+            android:id="@+id/officialsName"
+            android:layout_width="360dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="64dp"
+            android:paddingBottom="1dp"
+            android:text="Tammy Duckworth"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currentLocation" />
+
+        <ImageView
+            android:id="@+id/official_image"
+            android:layout_width="216dp"
+            android:layout_height="245dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.963"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/officialsParty"
+            app:srcCompat="@drawable/missing"
+            tools:srcCompat="@drawable/missing" />
+
+        <ImageView
+            android:id="@+id/partyLogo"
+            android:layout_width="115dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="132dp"
+            android:layout_marginBottom="18dp"
+            android:onClick="partyLogoClick"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.876"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/official_image"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="71dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Address: "
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officialsName" />
+
+        <TextView
+            android:id="@+id/phoneDetails"
+            android:layout_width="339dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressDetails"
+            tools:text="+1-3127769656" />
+
+        <TextView
+            android:id="@+id/addressDetails"
+            android:layout_width="336dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textIsSelectable="false"
+            android:textColorLink="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officialsName"
+            tools:text="400 E 33rd St Apt 1603, Chicago, 60616," />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="69dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Phone:"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="68dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Email:"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="67dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Website:"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <TextView
+            android:id="@+id/emailDetails"
+            android:layout_width="339dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="8dp"
+            android:text="Email Address"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneDetails" />
+
+        <TextView
+            android:id="@+id/websiteDetails"
+            android:layout_width="341dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="8dp"
+            android:text="Website URL"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailDetails" />
+
+        <TextView
+            android:id="@+id/officialsParty"
+            android:layout_width="192dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="568dp"
+            android:layout_marginTop="4dp"
+            android:paddingStart="4dp"
+            android:paddingLeft="4dp"
+            android:text="Official Party"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currentLocation" />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="32dp"
+            android:onClick="facebookClick"
+            android:padding="2dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/facebook"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="32dp"
+            android:clickable="true"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/facebook"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="32dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/twitter"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/youtube" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

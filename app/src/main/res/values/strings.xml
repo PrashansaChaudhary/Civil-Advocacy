@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Civil Advocacy</string>
+    <string name="application_name">Civil Advocacy App</string>
+    <string name="googleCivic_Information_API"><u>Google Civic Information API</u></string>
+    <string name="civil_advocacy">Civil Advocacy</string>
+    <string name="data_provided_by">Data provided by</string>
+    <string name="_169_2022_Prashansa_Chaudhary">© 2022, Prashansa Chaudhary</string>
+    <string name="version_1_0">Version 1.0</string>
+</resources>

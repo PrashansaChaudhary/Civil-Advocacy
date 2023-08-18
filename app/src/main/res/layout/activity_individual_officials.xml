@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constrainedLayout">
+
+        <TextView
+            android:id="@+id/currentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/lightTheme"
+            android:padding="4dp"
+            android:text="Current Location"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <TextView
+            android:id="@+id/officesNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="10dp"
+            android:padding="1dp"
+            android:text="U.S. Senator"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/currentLocation"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <TextView
+            android:id="@+id/officialsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="Tammy Duckworth"
+            android:paddingBottom="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/officesNames"/>
+
+        <TextView
+            android:id="@+id/officialsParty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="(Democratic Party)"
+            android:paddingBottom="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/officialsName"/>
+
+        <ImageView
+            android:id="@+id/official_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officialsParty"
+            app:srcCompat="@drawable/missing"
+            tools:srcCompat="@drawable/missing" />
+
+        <ImageView
+            android:id="@+id/partyLogo"
+            android:layout_width="115dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="150dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/official_image"
+            android:onClick="partyLogoClick"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="65dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Address: "
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/official_image" />
+
+        <TextView
+            android:id="@+id/addressDetails"
+            android:layout_width="278dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/official_image"
+            tools:text="Address Text" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="65dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Phone:"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+
+        <TextView
+            android:id="@+id/phoneDetails"
+            android:layout_width="274dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressDetails"
+            tools:text="Phone Number" />
+
+
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="65dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Email: "
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+        <TextView
+            android:id="@+id/emailDetails"
+            android:layout_width="272dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneDetails"
+            tools:text="Email address" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="65dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Website:"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <TextView
+            android:id="@+id/websiteDetails"
+            android:layout_width="274dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailDetails"
+            tools:text="Website URL" />
+
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="52dp"
+            android:clickable="true"
+            android:onClick="facebookClick"
+            android:padding="2dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/websiteDetails"
+            app:srcCompat="@drawable/facebook"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="52dp"
+            android:clickable="true"
+            android:padding="10dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/facebook"
+            app:layout_constraintTop_toBottomOf="@+id/websiteDetails"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="52dp"
+            android:clickable="true"
+            android:padding="5dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/twitter"
+            app:layout_constraintTop_toBottomOf="@+id/websiteDetails"
+            app:srcCompat="@drawable/youtube" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

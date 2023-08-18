@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1265" />
+        <entry key="app/src/main/res/font/poppins_light_italic.xml" value="0.23425925925925925" />
+        <entry key="app/src/main/res/layout-land/activity_individual_officials.xml" value="0.2682154171066526" />
+        <entry key="app/src/main/res/layout-land/activity_photo.xml" value="0.24971363115693013" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_individual_officials.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main_recyclerview.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_main_recyclerview_items.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_photo.xml" value="0.22529754638671876" />
+        <entry key="app/src/main/res/layout/change_location.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/menu/menu_items.xml" value="0.3037037037037037" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.24" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.24" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2678801454430052" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
